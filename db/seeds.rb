@@ -24,6 +24,7 @@ Product.create!(
       </p>
       },
       image_url: 'ridocker.jpg',
+      # image_url: 'https://container-xchange.com/wp-content/uploads/2019/08/Standard-container.jpg',
       price: 38.00
 )
 
