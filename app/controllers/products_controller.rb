@@ -28,7 +28,7 @@ class ProductsController < ApplicationController
         format.html { redirect_to @product, notice: "Product was successfully created." }
         format.json { render :show, status: :created, location: @product }
       else
-        puts 'Error from controller ' + @product.errors.full_messages.to_s # for debugging
+        puts "Error from controller #{self} "  + @product.errors.full_messages.to_s # Important for debugging
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @product.errors, status: :unprocessable_entity }
       end
